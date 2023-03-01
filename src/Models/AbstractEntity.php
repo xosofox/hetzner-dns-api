@@ -50,7 +50,17 @@
 		 * @return DateTime The date time instance
 		 */
 		protected static function dateFromString(string $date): DateTime {
-			return (new DateTime($date));
+            try {
+                return (new DateTime($date));
+            } catch (\Exception $exception) {
+                // convert strange date string 2020-01-01 01:02:03.111111111 +0000 UTC m=+123.456789012
+                if (preg_match('/^(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}).*UTC.*$/', $date, $matches)) {
+                    $dateString = sprintf('%s-%s-%s %s:%s:%s',$matches[1],$matches[2],$matches[3],$matches[4],$matches[5],$matches[6]);
+                    return new DateTime($dateString);
+                }
+
+                throw new \Exception('Could not convert string to date: '. $date);
+            }
 		}
 
 
