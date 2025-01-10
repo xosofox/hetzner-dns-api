@@ -1,5 +1,5 @@
 {
-  "name": "mehr-it/hetzner-dns-api",
+  "name": "xosofox/hetzner-dns-api",
   "type": "library",
   "description": "Unofficial PHP client for the Hetzner DNS API",
   "keywords": [
@@ -14,6 +14,10 @@
     {
       "name": "Christopher Mieger",
       "email": "mail@mehr-it.info"
+    },
+    {
+      "name": "Peter Dietrich",
+      "email": "pd@pd-it.de"
     }
   ],
   "autoload": {

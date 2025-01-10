@@ -1,6 +1,12 @@
 # Hetzner DNS API client
 This library implements an unofficial but complete PHP client for the Hetzner Public DNS API.
 
+## Comment by Peter: Why this fork?
+The original https://github.com/mehr-it/hetzner-dns-api repo seems to be stale.
+But I like the work that has been done.
+So I updated it to work for my personal use-cases.
+--- continue original README ---
+
 ## Why a proprietary license?
 Since Hetzner responded with no interest in supporting the development of a PHP DNS API client 
 library, we do not want to bear the development costs for the integration of their products alone. 
