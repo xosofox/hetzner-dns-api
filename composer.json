@@ -1,5 +1,6 @@
 {
   "name": "xosofox/hetzner-dns-api",
+  "version": "1.0.0",
   "type": "library",
   "description": "Unofficial PHP client for the Hetzner DNS API",
   "keywords": [
